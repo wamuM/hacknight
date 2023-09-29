@@ -1,0 +1,15 @@
+{
+  "name": "hacknight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "bun-types": "^1.0.3",
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wamuM and pauulemon",
+  "license": "ISC"
+}
