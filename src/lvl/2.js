@@ -1,27 +1,26 @@
-const footer = document.getElementById("footer")
 const button = document.getElementById("button")
 const main = document.getElementById("main")
 
-footer.style.height = "80vh";
 
 document.addEventListener("mousemove",(event)=>{
   let mx = event.clientX 
   let my = event.clientY 
   
   let b  = button.getBoundingClientRect() 
-  let bx = b.left
-  let by = b.top
+  let bx = b.left+0
+  let by = b.top+0
 
-  if(50**2 >= (bx-mx)**2+(by-my)**2){
-    button.style.left = (2*bx-mx)+"px"
-    button.style.top = (2*by-my)+"px"
+  if(100**2 >= (bx-mx)**2+(by-my)**2){
+    button.style.position = "absolute" 
+    bx += (bx-mx)
+    by += (by-my)
     console.log("danger")
-  }
+  
   if(bx<=0)
-    button.style.left = 0;
-  else button.style.left = bx;
+    button.style.left = b.left;
+  else button.style.left = bx+"px";
   if(by<=0)
-    button.style.top = 0;
-  else button.style.top = by;
-  console.log(mx+" "+my+" "+" "+bx+" "+by)
-})
+    button.style.top = b.top;
+  else button.style.top = by+"px";
+  }
+  })
