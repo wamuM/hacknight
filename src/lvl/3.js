@@ -1,6 +1,9 @@
 function over() {
-    console.log("HOla")
     document.getElementById("buttonYes").innerText = "No";
     document.getElementById("buttonNo").innerText = "Yes";
-    document.getElementById("buttonNo").href="/src/lvl/4.html";
+}
+
+function out() {
+    document.getElementById("buttonYes").innerText = "Yes";
+    document.getElementById("buttonNo").innerText = "No";
 }

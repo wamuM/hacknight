@@ -10,10 +10,13 @@ header {
 }
 body {
     background-color: bisque;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
 }
-h2{
-  padding: 2vh 2vw 2vh 2vw;
-}
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
 main {
     flex-flow:column;  
     margin-top: 2vh;
