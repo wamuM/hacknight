@@ -33,3 +33,11 @@ footer {
     width: 50vw;
     background-color: blue;
 }
+
+button {
+    background-color: antiquewhite;
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+}
